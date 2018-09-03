@@ -3,7 +3,7 @@ ARG VERSION=3.9.0
 
 RUN apt-get update && \
     apt-get --assume-yes upgrade && \
-    apt-get --assume-yes install wget libio-socket-ip-perl libio-socket-ssl-perl libjson-any-perl && \
+    apt-get --assume-yes install wget libio-socket-ip-perl libio-socket-ssl-perl libjson-any-perl libdata-validate-ip-perl && \
     wget "http://downloads.sourceforge.net/project/ddclient/ddclient/ddclient-${VERSION}/ddclient-${VERSION}.tar.gz" -O- | tar xzf - && \
     cp ddclient-${VERSION}/ddclient /usr/sbin/ && \
     mkdir -p /etc/ddclient && \

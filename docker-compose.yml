@@ -2,6 +2,6 @@ version: "2"
 
 services: 
   ddclient:
-    image: valemay/ddclient
+    image: valmaye/ddclient
     volumes:
       - config/ddclient.conf:/etc/ddclient/ddclient.conf
